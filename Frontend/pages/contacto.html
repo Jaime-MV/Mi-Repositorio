@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../Styles/contacto.css">
 </head>
 <body>
+
+  <!-- Encabezado de la página / Navegación -->
+  <header class="header-principal">
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#" class="active">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="contenedor-contacto">
     
+    <!-- Sección de información adicional (opcional pero recomendada) -->
+    <section class="info-contacto">
+      <h2>Ponte en contacto</h2>
+      <p>¿Tienes alguna duda o proyecto en mente? Escríbenos y te responderemos a la brevedad.</p>
+      <ul>
+        <li><strong>Email:</strong> soporte@ejemplo.com</li>
+        <li><strong>Teléfono:</strong> +503 1234-5678</li>
+      </ul>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="seccion-formulario">
+      <form action="#" method="POST" class="form-contacto">
+        <h1>Formulario de Contacto</h1>
+
+        <div class="grupo-campo">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje">
+        </div>
+
+        <div class="grupo-campo">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer-principal">
+    <p>&copy; 2026 Tu Marca. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
